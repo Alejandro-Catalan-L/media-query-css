@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav i{
+  font-size: xx-large;
+  margin-right: 35px;
+}
+
+button{
+
+
+  align-items: right;
+  text-align: right;
+}
+
+
+.card {
+  color: #055454;
+  box-shadow: 0 4px 8px 0 rgba(178, 33, 33, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+
+
+}
+.card-body {
+  margin-top: 2px;
+ 
+  width: 50%;
+
+}
+.button {
+color: #0931b5;
+font-size: 15px;
+background-color: #fbfdfe;
+transition-duration: 0.4s;
+}
+.button-ver{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1027f1;
+}
+.tren-group .button-page {
+border: 1px solid #bfbbbb;
+padding: 15px 15px;
+margin-bottom: 20px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+
+
+}
+
+.tren-group{
+display: flex;
+flex-direction: row;
+ justify-content: center;
+ 
+ margin-top: 20px;
+}
+.button:hover{
+  color: #06a445;
+  background-color: #150eeb;
+  align-items: center;
+  
+}
+
+
+.contenedor-principal{
+
+  display: grid;
+
+  border: 1px solid black;
+  grid-template-rows: 1.4fr 1.5fr 10fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "nav1"
+  "form1"
+  "seccion-principal"
+  "pie-de-pagina";
+  height: 100vh;
+
+}
+
+
+.container-fluid{
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+}
+.clase-flex{
+  display: flex;
+
+}
+.clase-flexcolum
+{
+  
+  flex-direction: column;
+}
+
+.clase-flexrow{
+  flex-direction: row;
+}
+
+
+.nav1{
+ 
+  grid-area: nav1;
+  background: #0037a1;
+  color: rgb(193, 69, 69);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+
+ 
+ 
+}
+.fa-solid{
+
+
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+
+
+}
+.form1 h5{
+
+  margin-top: 10px;
+}
+.nav-item{
+  padding-top: 10%;
+  border-top: 50px;
+}
+
+.form1{
+
+  align-items: center;
+  text-align: center;
+  background-color: rgb(203, 208, 218);
+  grid-area: form1;
+ 
+}
+select{
+
+
+  width: 80%;
+}
+
+.seccion-principal{
+
+  grid-area: seccion-principal;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: scroll;
+  
+
+}
+.filtros{
+
+  align-items: center;
+  text-align: center;
+  width: 100%;
+ 
+}
+
+
+.pie-de-pagina {
+  grid-area: pie-de-pagina;
+
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(16, 121, 226);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+@media (min-width: 992px)
+{
+.contenedor-principal{
+
+
+  grid-template-areas: 
+  "nav1 form1"
+  "nav1 seccion-principal"
+  "pie-de-pagina seccion-principal";
+
+height: 100vh;
+grid-template-columns: 200px auto;
+grid-template-rows: 0.2fr 2.4fr 0.4fr;
+
+
+}
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  justify-content: start ;
+  display: flex;
+}
+
+.nav1r{
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.navmenu{
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+}
+
+
+
+
+
+@media (min-width: 576px) { 
+  .contenedor-principal {
+      grid-template-columns: 200px auto; 
+      grid-template-rows: 100px auto 100px; 
+      grid-template-areas: 
+        "nav1 nav1"
+        "form1 seccion-principal"
+        "pie-de-pagina pie-de-pagina"; 
+    }
+  
+    
+    .grid-card{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav1{
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .navbar-toggler-icon{
+      flex-direction: row;
+    }
+    .collapse{
+     
+      flex-direction: row;
+      margin: 30px;
+      gap: 20px;
+      
+    
+    
+      display: flex;
+  
+      align-content: flex-start;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+    }
+   
+    .container-fluid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    text-align: left;
+    align-items: left;
+    justify-content: flex-end;
+    display: flex;
+}
+    
+    }
